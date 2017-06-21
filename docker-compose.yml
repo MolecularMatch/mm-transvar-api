@@ -1,0 +1,16 @@
+version: '2'
+services:
+  api:
+    image: rsmith/mm-transvar-api:latest
+    log_driver: syslog
+    
+  web:
+    image: rsmith/docker-mm-nginx-transvar
+    ports:
+     - "443:443"
+    environment:
+     - ETCD_HOST=10.0.0.93
+     - ETCD_PORT=4001
+    links:
+     - api
+    log_driver: syslog
