@@ -1,0 +1,21 @@
+{
+  "name": "mm-transvar-api",
+  "version": "1.0.0",
+  "description": "Transvar api exposing command line transvar",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MolecularMatch/mm-transvar-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MolecularMatch/mm-transvar-api/issues"
+  },
+  "homepage": "https://github.com/MolecularMatch/mm-transvar-api#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3"
+  }
+}
