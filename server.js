@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({
 app.post('/', (req, res) => {
 	var task = req.body.task
 	var identifier = req.body.identifier
-	var annotationDBsFromBody = req.body.annotationDBs || ['ucsc', 'refseq', 'ccds']
+	var annotationDBsFromBody = req.body.annotationDBs || ['ucsc', 'refseq', 'ccds', 'ensembl']
 	var args = [task]
 
 	annotationDBsFromBody.forEach(db => {
